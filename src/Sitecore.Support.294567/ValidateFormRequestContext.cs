@@ -5,7 +5,7 @@ using Sitecore.ExperienceForms.Mvc;
 using System;
 using System.Web.Helpers;
 
-namespace Sitecore.ExperienceForms.Mvc.Filters
+namespace Sitecore.Support.ExperienceForms.Mvc.Filters
 {
   internal class ValidateFormRequestContext
   {

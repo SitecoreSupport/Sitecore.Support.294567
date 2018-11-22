@@ -3,7 +3,7 @@ using Sitecore.ExperienceForms.Mvc.Filters;
 using System;
 using System.Web.Mvc;
 
-namespace Sitecore.ExperienceForms.Mvc.Filters
+namespace Sitecore.Support.ExperienceForms.Mvc.Filters
 {
   [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
   internal sealed class ValidateFormRequestAttribute : FilterAttribute, IAuthorizationFilter

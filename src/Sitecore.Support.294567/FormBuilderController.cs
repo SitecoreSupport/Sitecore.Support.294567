@@ -15,7 +15,7 @@ using Sitecore.Web;
 using System;
 using System.Web.Mvc;
 
-namespace Sitecore.ExperienceForms.Mvc.Controllers
+namespace Sitecore.Support.ExperienceForms.Mvc.Controllers
 {
   public class FormBuilderController : Controller
   {
@@ -38,7 +38,7 @@ namespace Sitecore.ExperienceForms.Mvc.Controllers
       FormSubmitHandler = formSubmitHandler;
     }
 
-    [HttpGet]
+    [AcceptVerbs(HttpVerbs.Get | HttpVerbs.Head)]
     [SetFormMode(Editing = false)]
     public ActionResult Index()
     {
@@ -56,7 +56,7 @@ namespace Sitecore.ExperienceForms.Mvc.Controllers
     }
 
     [HttpPost]
-    [ValidateFormRequest]
+    [Sitecore.Support.ExperienceForms.Mvc.Filters.ValidateFormRequest]
     public ActionResult Index(FormDataModel data)
     {
       if (data == null)
