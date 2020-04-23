@@ -38,7 +38,7 @@ namespace Sitecore.Support.ExperienceForms.Mvc.Controllers
       FormSubmitHandler = formSubmitHandler;
     }
 
-    [AcceptVerbs(HttpVerbs.Get | HttpVerbs.Head)]
+    [AcceptVerbs(HttpVerbs.Get | HttpVerbs.Head | HttpVerbs.Options | HttpVerbs.Patch | HttpVerbs.Put | HttpVerbs.Delete)]
     [SetFormMode(Editing = false)]
     public ActionResult Index()
     {
